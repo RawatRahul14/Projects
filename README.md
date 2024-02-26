@@ -2,7 +2,7 @@
 
 Welcome to the project repository! This repository contains various projects focusing on Machine Learning, Data Analysis, and more. Each project is aimed at exploring different concepts and techniques within the field of Data Science. 
 
-## Project 1: Stock Price Prediction using LSTM 
+## Project 1: Stock Price Prediction using LSTM(Long Short-Term Memory)
 
 ### Description 
 
