@@ -28,7 +28,7 @@ from tensorflow.keras.optimizers import Adam
 import math
 from sklearn.metrics import mean_squared_error
 
-# uploading the dataset, I won't be using the date column as index
+# uploading the dataset, I won't be using the date column as index for the simplicity
 dataset = pd.read_csv("GOOG.csv")
 dataset.info()
 
@@ -37,7 +37,7 @@ dataset.shape
 
 # plotting the "High" value from the whole dataset
 dataset["High"].plot(figsize = (10, 4))
-plt.xlabel("No. of Day")
+plt.xlabel("No. of the Day")
 plt.ylabel("Amount")
 plt.title("Google Stock Price")
 plt.grid(True)
@@ -90,7 +90,7 @@ x_train, y_train = np.array(x_train, dtype = "float"), np.array(y_train, dtype =
 print(f"Shape of x_train : {x_train.shape}")
 print(f"Shape of y_train : {y_train.shape}")
 
-# reshapping the train dataset into 3 dimension, as the LSTM model accepts 3 dimension values only
+# reshaping the train dataset into 3 dimension, as the LSTM model accepts 3 dimensional values only
 x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 print(f"Shape of x_train : {x_train.shape}")
 
@@ -100,7 +100,7 @@ class MyModel(tf.keras.Model):
   def __init__(self, lstm_units = None, dropout_value = None):
     super().__init__()
 
-    # keeping the return_sequence = True, with this each LSTM unit will return the values instead of last one only.
+    # keeping the return_sequence = True, with this each LSTM unit will return the values instead of last unit only.
     # LSTM layer 1
     self.lstm_1 = Bidirectional(LSTM(units = lstm_units, return_sequences = True))
     self.dropout_1 = Dropout(dropout_value)
@@ -117,7 +117,7 @@ class MyModel(tf.keras.Model):
     self.lstm_4 = Bidirectional(LSTM(units = lstm_units))
     self.dropout_4 = Dropout(dropout_value)
 
-    # Fully coonected layer
+    # Fully connected layer
     self.dense_1 = Dense(units = 15)
 
     # output layer
@@ -174,7 +174,7 @@ for i in range(60, test_data.shape[0]):
 x_test, y_test = np.array(x_test, dtype = "float"), np.array(y_test, dtype = "float")
 
 print(f"Shape of x_test : {x_test.shape}")
-print(f"Shaep of y_test : {y_test.shape}")
+print(f"Shape of y_test : {y_test.shape}")
 
 # reshaping x_test into a 3 dimension array
 x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
