@@ -44,21 +44,21 @@ This project contains code for Deep Audio Classification using TensorFlow and Te
 
 ### Requirements
 
-Install Required Libraries
+-Install Required Libraries
    
     !pip install tensorflow tensorflow-io
 
-Mount Google Drive
+-Mount Google Drive
    
     from google.colab import drive
     drive.mount("/content/drive")
 
-Extrtact Audio Data
+-Extrtact Audio Data
    
     with zipfile.ZipFile('/content/drive/MyDrive/Audio_Classification_Data/Data.zip') as z:
         z.extractall()
 
-Python Dependencies
+-Python Dependencies
 
     import os
     from matplotlib import pyplot as plt
