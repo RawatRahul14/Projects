@@ -34,3 +34,23 @@ The LSTM model used for stock price prediction is defined in the provided Python
 
 ### Saving the model 
 The trained model is saved in a pickle file named "Google_model.pkl". You can load this model later for making predictions without retraining.
+
+
+## Project 2: Audio Classification
+
+### Description
+
+This project contains code for Deep Audio Classification using TensorFlow and TensorFlow IO libraries. The code includes preprocessing of audio data, building a convolutional neural network (CNN) model, training the model, making predictions on audio clips, and saving the results in a csv file.
+
+### Requirements
+
+1. Install Required Libraries
+    !pip install tensorflow tensorflow-io
+
+2. Mount Google Drive
+    from google.colab import drive
+    drive.mount("/content/drive")
+
+3. Extrtact Audio Data
+    with zipfile.ZipFile('/content/drive/MyDrive/Audio_Classification_Data/Data.zip') as z:
+        z.extractall()
