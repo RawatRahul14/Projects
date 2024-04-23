@@ -57,3 +57,16 @@ Extrtact Audio Data
    
     with zipfile.ZipFile('/content/drive/MyDrive/Audio_Classification_Data/Data.zip') as z:
         z.extractall()
+
+Python Dependencies
+
+    import os
+    from matplotlib import pyplot as plt
+    import tensorflow as tf
+    import tensorflow_io as tfio
+    from google.colab import drive
+    import zipfile
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import Conv2D, MaxPool2D, Dropout, Flatten, Dense
+    from itertools import groupby
+    import csv
