@@ -70,3 +70,12 @@ This project contains code for Deep Audio Classification using TensorFlow and Te
     from tensorflow.keras.layers import Conv2D, MaxPool2D, Dropout, Flatten, Dense
     from itertools import groupby
     import csv
+
+### Usage
+
+1. Data Preprocessing: The code includes functions for loading and preprocessing audio data. It resamples the audio to 16 kHz, extracts spectrograms, and prepares the data for model training.
+2. Model Building: A CNN model is constructed using TensorFlow's Sequential API. The model consists of convolutional layers followed by max-pooling, dropout, and fully connected layers.
+3. Training: The model is trained using the provided training dataset. Training progress and metrics are displayed during training.
+4. Evaluation: After training, the model is evaluated on a separate test dataset. Performance metrics such as loss, precision, and recall are plotted for visualization.
+5. Prediction: The trained model is used to make predictions on audio clips. The code processes each audio clip, generates predictions, and groups consecutive detections.
+6. Saving Results: The results of the predictions are saved in a CSV file named "results.csv". Each row contains the filename of the audio clip and the number of predicted Capuchin bird calls.
