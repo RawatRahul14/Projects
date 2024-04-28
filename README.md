@@ -79,3 +79,23 @@ This project contains code for Deep Audio Classification using TensorFlow and Te
 4. Evaluation: After training, the model is evaluated on a separate test dataset. Performance metrics such as loss, precision, and recall are plotted for visualization.
 5. Prediction: The trained model is used to make predictions on audio clips. The code processes each audio clip, generates predictions, and groups consecutive detections.
 6. Saving Results: The results of the predictions are saved in a CSV file named "results.csv". Each row contains the filename of the audio clip and the number of predicted Capuchin bird calls.
+
+
+## Project 3: Sentiment Analysis using LSTM and GloVe Embeddings
+
+### Description 
+This project demonstrate how to build a deep learning model to predict emojis based on input text using Long-Short Term Memory (LSTM) networks and pre-trained GloVe word embeddings.
+
+### Requirements
+
+-Install Required Libraries
+
+    pip install emoji keras numpy pandas
+
+### Usage
+
+1. Dataset: The dataset used for this project ("emoji_data.csv") contains text samples paired with the emoji labels. Each row consists of a text sample and its correspponding emoji label.
+2. Embeddings: The project uses pre-trained GloVe word embeddings to represent words in the input text. These embeddings capture the semantic relationships between words, which will help the model understand the context of the texts.
+3. Model Architecture: The model architecture consists of an embedding layer followed by LSTM layers. The embedding layer maps words to dense vectors using pre-trained GloVe embeddings.
+4. Training: The model is trained on the provided dataset using categorical cross-entropy and the Adam optimizer.
+5. Testing: After training, the model is tested on new text samples to predict the emoji.
