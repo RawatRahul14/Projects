@@ -45,19 +45,19 @@ This project contains code for Deep Audio Classification using TensorFlow and Te
 ### Requirements
 
 -Install Required Libraries
-   
-    !pip install tensorflow tensorflow-io
-
+```py   
+!pip install tensorflow tensorflow-io
+```
 -Mount Google Drive
-   
-    from google.colab import drive
-    drive.mount("/content/drive")
-
+```py   
+from google.colab import drive
+drive.mount("/content/drive")
+```
 -Extrtact Audio Data
-   
-    with zipfile.ZipFile('/content/drive/MyDrive/Audio_Classification_Data/Data.zip') as z:
-        z.extractall()
-
+```py   
+with zipfile.ZipFile('/content/drive/MyDrive/Audio_Classification_Data/Data.zip') as z:
+    z.extractall()
+```
 -Python Dependencies
 ```py
 import os
@@ -89,9 +89,9 @@ This project demonstrate how to build a deep learning model to predict emojis ba
 ### Requirements
 
 -Install Required Libraries
-
-    pip install emoji keras numpy pandas
-
+```bash
+pip install emoji keras numpy pandas
+```
 ### Usage
 
 1. Dataset: The dataset used for this project ("emoji_data.csv") contains text samples paired with the emoji labels. Each row consists of a text sample and its correspponding emoji label.
