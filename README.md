@@ -59,18 +59,18 @@ This project contains code for Deep Audio Classification using TensorFlow and Te
         z.extractall()
 
 -Python Dependencies
-
-    import os
-    from matplotlib import pyplot as plt
-    import tensorflow as tf
-    import tensorflow_io as tfio
-    from google.colab import drive
-    import zipfile
-    from tensorflow.keras.models import Sequential
-    from tensorflow.keras.layers import Conv2D, MaxPool2D, Dropout, Flatten, Dense
-    from itertools import groupby
-    import csv
-
+```py
+import os
+from matplotlib import pyplot as plt
+import tensorflow as tf
+import tensorflow_io as tfio
+from google.colab import drive
+import zipfile
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPool2D, Dropout, Flatten, Dense
+from itertools import groupby
+import csv
+```
 ### Usage
 
 1. Data Preprocessing: The code includes functions for loading and preprocessing audio data. It resamples the audio to 16 kHz, extracts spectrograms, and prepares the data for model training.
