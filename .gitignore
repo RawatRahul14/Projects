@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 
 Image Captioning using Attention Model/Data/*
+Online Retail/Dataset/*
