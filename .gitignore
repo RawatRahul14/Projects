@@ -162,3 +162,4 @@ cython_debug/
 Image Captioning using Attention Model/Data/*
 Online Retail/Dataset/*
 Classification_using_pytorch/Dataset/*
+Credit Card Fraud/Data/*
