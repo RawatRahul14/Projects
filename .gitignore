@@ -164,3 +164,4 @@ Online Retail/Dataset/*
 Classification_using_pytorch/Dataset/*
 Credit Card Fraud/*
 Plagiarism Detector/Dataset/*
+Variational AutoEncoder/dataset/*
